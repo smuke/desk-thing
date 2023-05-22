@@ -11,18 +11,21 @@ Window {
     color: "#1D3C47"
 
     RowLayout  {
+        anchors.fill: parent
+        anchors.centerIn: parent
+
         Image {
             source: "https://upload.wikimedia.org/wikipedia/en/a/ae/Jon_Bellion_-_Glory_Sound_Prep.png"
+            fillMode: Image.PreserveAspectFit
 
-            width: 200; height: 200
+            Layout.preferredHeight: parent.height / 1.5
+            Layout.leftMargin: 20
         }
         Text {
             text: "Conversations\nwith my Wife"
             color: "white"
 
-            font.pixelSize: 64
-            font.bold: true
-            font.family: "Plus Jakarta Sans"
+            font { family: "Plus Jakarta Sans"; pixelSize: 64; bold: true }
         }
     }
 }
