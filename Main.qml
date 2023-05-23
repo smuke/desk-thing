@@ -21,11 +21,26 @@ Window {
             Layout.preferredHeight: parent.height / 1.5
             Layout.leftMargin: 20
         }
-        Text {
-            text: "Conversations\nwith my Wife"
-            color: "white"
+        ColumnLayout {
+            Text {
+                text: "Glory Sound Prep"
+                color: "white"
 
-            font { family: "Plus Jakarta Sans"; pixelSize: 64; bold: true }
+                font { family: "Inter"; pixelSize: 24 }
+            }
+            Text {
+                text: "Conversations\nwith my Wife"
+                color: "white"
+
+                font { family: "Plus Jakarta Sans"; pixelSize: 64; bold: true; letterSpacing: -2 }
+                lineHeight: 0.75
+            }
+            Text {
+                text: "Jon Bellion"
+                color: "white"
+
+                font { family: "Inter"; pixelSize: 32; weight: medium }
+            }
         }
     }
 }
