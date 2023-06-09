@@ -6,7 +6,7 @@ Window {
     width: 1024; height: 600
     minimumWidth: 1024; minimumHeight: 600
     visible: true
-    title: qsTr("Spotify Desk Thing")
+    title: qsTr("Desk Thing")
 
     color: "#1D3C47"
 
