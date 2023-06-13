@@ -11,15 +11,15 @@ Window {
     color: "#1D3C47"
 
     RowLayout  {
-        anchors.fill: parent
-        anchors.centerIn: parent
+        height: parent.height
+        anchors.horizontalCenter: parent.horizontalCenter
+        spacing: 50
 
         Image {
             source: "https://upload.wikimedia.org/wikipedia/en/a/ae/Jon_Bellion_-_Glory_Sound_Prep.png"
             fillMode: Image.PreserveAspectFit
 
-            Layout.preferredHeight: parent.height / 1.5
-            Layout.leftMargin: 20
+            Layout.preferredHeight: parent.height / 2
         }
         ColumnLayout {
             Text {
