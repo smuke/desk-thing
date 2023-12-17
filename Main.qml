@@ -7,7 +7,6 @@ Window {
     minimumWidth: 1024; minimumHeight: 600
     visible: true
     title: qsTr("Desk Thing")
-
     color: "#1D3C47"
 
     RowLayout  {
