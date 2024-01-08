@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 6.2 REQUIRED COMPONENTS Quick)
 
-
 qt_add_executable(appspotify-desk-thing
     main.cpp
 )
@@ -16,6 +15,7 @@ qt_add_qml_module(appspotify-desk-thing
     URI spotify-desk-thing
     VERSION 1.0
     QML_FILES Main.qml
+    SOURCES backend.h backend.cpp
 )
 
 set_target_properties(appspotify-desk-thing PROPERTIES
@@ -35,3 +35,4 @@ install(TARGETS appspotify-desk-thing
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
